@@ -1,92 +1,93 @@
-Indian Startup Funding Dashboard
-🚀 Structured Labs Coding Assessment Submission
-An interactive dashboard built using the Preswald framework that visualizes key insights from the Indian startup ecosystem — including funding trends, top cities, investment rounds, and sectors.
+#  Indian Startup Funding Dashboard  
+###  Structured Labs Coding Assessment Submission
 
-📦 Project Setup
-Requirements
-Python 3.8+
+An interactive dashboard built using the **Preswald** framework that visualizes key insights from the Indian startup ecosystem — including funding trends, top cities, investment rounds, and sectors.
 
-Google Chrome
+---
 
-Preswald (install via pip)
+##  Project Setup
 
-Setup Instructions
-Install Preswald:
-pip install preswald
+### Requirements
+- Python 3.8 or higher  
+- Google Chrome  
+- preswald installed via pip
 
-Initialize project:
-preswald init my_assessment_app
+### Setup Instructions
+1. Install Preswald  
+   `pip install preswald`
 
-Navigate to the project folder:
-cd my_assessment_app
+2. Create project  
+   `preswald init my_assessment_app`
 
-Start the development server:
-preswald run
+3. Navigate to the project directory  
+   `cd my_assessment_app`
 
-Open in browser:
-http://localhost:8000
+4. Start development server  
+   `preswald run`
 
-📁 Dataset
-The dataset used is a public Indian startup funding dataset, which includes columns like:
+5. Open browser at  
+   `http://localhost:8000`
 
-Startup
+---
 
-City
+## 📁 Dataset
 
-Vertical
+The dataset used is a public dataset containing Indian startup funding data.
 
-Investment Round
+### Columns Included:
+- Startup  
+- City  
+- Vertical  
+- Investment Round  
+- Amount in INR (Cr)  
+- Date  
 
-Amount in INR (Cr)
+The dataset is placed in the `data/` folder and referenced in the `preswald.toml` configuration file.
 
-Date
+---
 
-It was placed inside the data/ folder and referenced in the preswald.toml file.
+##  Features
 
-🚀 Features
-Key Metrics: Total funding, average deal size, number of startups, and cities
+- **Key Metrics**: Total funding, average deal size, number of startups, and cities  
+- **Dynamic Table**: Shows recent startup funding deals  
+- **Filter Slider**: Set a minimum funding threshold interactively  
+- **Top Cities Chart**: Bar chart showing top 10 cities by funding  
+- **Investment Round Distribution**: Pie chart showing share by round  
+- **Top Sectors**: Bar chart of sectors receiving the most funding  
+- **Summary Insight Section**: Auto-calculated top city, round, and sector  
+- **Last Updated Timestamp**: UTC time for dashboard update  
 
-Dynamic Table: View recent startup funding deals
+---
 
-Filter Slider: Adjust minimum funding amount dynamically
+## How the App Works
 
-Top Cities Chart: Bar chart showing top 10 cities by total funding
+- Load dataset using `connect()` and `get_df()` from Preswald  
+- Clean and convert data types (dates, numeric values)  
+- Apply filters dynamically based on user input  
+- Generate visualizations using Plotly Express  
+- Render UI using Preswald widgets like `text`, `table`, `slider`, and `plotly`  
 
-Investment Round Distribution: Pie chart showing funding share by round
+---
 
-Top Sectors: Bar chart for top-funded sectors
+##  Export Instructions
 
-Summary Insights: Auto-calculated insights (top city, round, sector)
+To export the final version of the app as a static site, run:  
+`preswald export --format html`
 
-Last Updated Timestamp: UTC timestamp showing data freshness
+This generates a folder called `dist/` containing a complete HTML version of the app, ready to be zipped or deployed.
 
-🧠 How the App Works
-Load dataset using Preswald’s connect() and get_df()
+---
 
-Clean data and convert types (e.g., dates, currency)
+##  Author
 
-Apply interactive filters via slider and inputs
+**Gudhal Chauhan**  
+Full Stack Developer | Internship Candidate  
+GitHub: [https://github.com/DRAKEN-1974](https://github.com/DRAKEN-1974)  
 
-Visualize data using Plotly Express
 
-Render components with Preswald widgets (text, table, plotly, etc.)
+---
 
-🔁 Export Instructions
-To export the project as a static HTML version, run:
+##  Powered By
 
-bash
-Copy
-Edit
-preswald export --format html
-This will create a folder named dist/ that contains the complete HTML version of your dashboard, ready to be zipped or submitted.
-
-🙋 Author
-Gudhal Chauhan
-Full Stack Developer | Internship Candidate
-GitHub: https://github.com/DRAKEN-1974
-LinkedIn: (Add your LinkedIn profile URL here)
-
-🧠 Powered By
-Preswald – Build powerful data apps in minutes
-GitHub: https://github.com/StructuredLabs/preswald
-
+**Preswald** – Build powerful data apps in minutes  
+GitHub: [https://github.com/StructuredLabs/preswald](https://github.com/StructuredLabs/preswald)
