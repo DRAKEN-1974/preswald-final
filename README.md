@@ -69,6 +69,22 @@ The dataset is placed in the `data/` folder and referenced in the `preswald.toml
 
 ---
 
+## 🖼️ App Preview
+
+### Dashboard View
+
+![Dashboard](./screenshots/barchart.png)
+
+### Filters and Interactions
+
+![Filters](./screenshots/circular.png)
+
+### Summary Section
+
+![Summary](./screenshots/greendata.png)
+
+
+
 ##  Export Instructions
 
 To export the final version of the app as a static site, run:  
