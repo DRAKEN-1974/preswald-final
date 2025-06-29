@@ -1,44 +1,32 @@
-# 📊 Indian Startup Funding Dashboard
+Indian Startup Funding Dashboard
+Structured Labs Coding Assessment Submission
+An interactive dashboard built using the Preswald framework that visualizes key insights from the Indian startup ecosystem, including funding trends, top cities, investment rounds, and sectors.
 
-**A data-driven dashboard providing real-time insights into India's startup funding ecosystem.**  
-Built using Python and the Preswald framework, this tool visualizes funding trends, key metrics, and top sectors.
 
----
+📦 Project Setup
+Requirements
 
-## 🚀 Features
+Python 3.8 or higher
 
-- 📅 Recent Funding Deals: View the latest startup deals with date, amount, and sector.
-- 🧮 Key Metrics: Total funding raised, average deal size, total startups, and active cities.
-- 🏙️ Top Cities: Bar chart showing cities with the highest funding received.
-- 💸 Investment Rounds: Pie chart distribution of top investment rounds.
-- 🏢 Industry Verticals: Sector-wise breakdown of top-funded domains.
-- 🎛️ Interactive Filter: Slider to filter data based on minimum funding amount.
-- 📈 Visuals: Beautiful charts powered by Plotly Express.
+Google Chrome
 
----
+preswald installed via pip
 
-## 📦 Technologies Used
+Setup Instructions
 
-- Python 3
-- Pandas
-- Plotly Express
-- Preswald (for text, connect, get_df, UI components)
+Install Preswald using: pip install preswald
 
----
+Create project using: preswald init my_assessment_app
 
-## 📁 Data Source
+Navigate to the folder: cd my_assessment_app
 
-The dashboard fetches data using:
+Start server: preswald run
 
-```python
-from preswald import connect, get_df
-connect()
-df = get_df("startup_funding")
----
+Open browser at: http://localhost:8000
 
-he dataset is expected to contain the following key columns:
-
-Date
+📁 Dataset
+The dataset used is a public dataset containing Indian startup funding data.
+It includes columns like:
 
 Startup
 
@@ -48,47 +36,54 @@ Vertical
 
 Investment Round
 
-Amount in INR(cr)
+Amount in INR (Cr)
 
-🧪 How It Works
-Cleans and parses funding data
+Date
 
-Converts amount strings to numeric values
+The dataset was placed inside the data/ folder and referenced in preswald.toml.
 
-Drops rows with missing or invalid entries
+🚀 Features
+Key Metrics: Total funding, average deal size, number of startups, and cities
 
-Applies interactive filters
+Dynamic Table: Shows recent startup funding deals
 
-Generates dynamic charts and tables for visual insights
+Filter Slider: Set a minimum funding threshold interactively
 
-📷 Sample Screenshots
-Add screenshots or a screen recording of your dashboard UI here (if required by the internship submission).
+Top Cities Chart: Bar chart showing top 10 cities by funding
 
-🧠 Insights Captured
-💡 Top performing cities, sectors, and investment rounds
+Investment Round Distribution: Pie chart showing share by round
 
-📊 Real-time deal distribution with filtering capability
+Top Sectors: Bar chart of sectors receiving the most funding
 
-🏆 Easy-to-interpret data for stakeholders and analysts
+Summary Insight Section: Auto-calculated top city, round, and sector
 
-📅 Last Updated
-Automatically shown at the bottom of the dashboard.
-Format: YYYY-MM-DD HH:MM:SS UTC
+Last Updated Timestamp: UTC time for dashboard update
 
-🛠️ Setup Instructions
-This app runs inside the Preswald environment.
+🧠 How the App Works
+Load dataset using Preswald’s connect and get_df
 
-Clone the repo or open the .py file
+Clean and convert data types (dates, numeric values)
 
-Ensure preswald, pandas, and plotly are available
+Apply filters dynamically based on user input
 
-Run the script in the Preswald environment
+Generate visualizations using Plotly Express
 
-🙌 Author
+Render UI using Preswald widgets like text, table, slider, and plotly
+
+🔁 Export Instructions
+To export the final version of the app as a static site, run:
+
+preswald export --format html
+
+It generates a folder called dist/ containing a complete HTML version of the app, ready to be zipped or deployed.
+
+🙋 Author
 Gudhal Chauhan
-Full Stack Developer Intern @ Preswald
-LinkedIn: [Add your link here]
-GitHub: [Add your link here]
+Full Stack Developer | Internship Candidate
+GitHub: https://github.com/DRAKEN-1974
+LinkedIn: (Add your LinkedIn profile)
 
-📢 Powered By
-Preswald – Transforming data into dynamic dashboards.
+🧠 Powered By
+Preswald – Build powerful data apps in minutes
+https://github.com/StructuredLabs/preswald
+
