@@ -7,22 +7,22 @@ Built using Python and the Preswald framework, this tool visualizes funding tren
 
 ## 🚀 Features
 
-- 📅 **Recent Funding Deals**: View the latest startup deals with date, amount, and sector.
-- 🧮 **Key Metrics**: Total funding raised, average deal size, total startups, and active cities.
-- 🏙️ **Top Cities**: Bar chart showing cities with the highest funding received.
-- 💸 **Investment Rounds**: Pie chart distribution of top investment rounds.
-- 🏢 **Industry Verticals**: Sector-wise breakdown of top-funded domains.
-- 🎛️ **Interactive Filter**: Slider to filter data based on minimum funding amount.
-- 📈 **Visuals**: Beautiful charts powered by Plotly Express.
+- 📅 Recent Funding Deals: View the latest startup deals with date, amount, and sector.
+- 🧮 Key Metrics: Total funding raised, average deal size, total startups, and active cities.
+- 🏙️ Top Cities: Bar chart showing cities with the highest funding received.
+- 💸 Investment Rounds: Pie chart distribution of top investment rounds.
+- 🏢 Industry Verticals: Sector-wise breakdown of top-funded domains.
+- 🎛️ Interactive Filter: Slider to filter data based on minimum funding amount.
+- 📈 Visuals: Beautiful charts powered by Plotly Express.
 
 ---
 
 ## 📦 Technologies Used
 
-- **Python 3**
-- **Pandas**
-- **Plotly Express**
-- **Preswald** (for text, connect, get_df, UI components)
+- Python 3
+- Pandas
+- Plotly Express
+- Preswald (for text, connect, get_df, UI components)
 
 ---
 
@@ -34,7 +34,9 @@ The dashboard fetches data using:
 from preswald import connect, get_df
 connect()
 df = get_df("startup_funding")
-The dataset is expected to contain the following key columns:
+---
+
+he dataset is expected to contain the following key columns:
 
 Date
 
@@ -60,7 +62,7 @@ Applies interactive filters
 Generates dynamic charts and tables for visual insights
 
 📷 Sample Screenshots
-Add screenshots or screen recording of your dashboard UI here if required for submission.
+Add screenshots or a screen recording of your dashboard UI here (if required by the internship submission).
 
 🧠 Insights Captured
 💡 Top performing cities, sectors, and investment rounds
@@ -70,11 +72,9 @@ Add screenshots or screen recording of your dashboard UI here if required for su
 🏆 Easy-to-interpret data for stakeholders and analysts
 
 📅 Last Updated
-text
-Copy
-Edit
 Automatically shown at the bottom of the dashboard.
-Format: YYYY-MM-DD HH:MM:SS (UTC)
+Format: YYYY-MM-DD HH:MM:SS UTC
+
 🛠️ Setup Instructions
 This app runs inside the Preswald environment.
 
@@ -86,8 +86,9 @@ Run the script in the Preswald environment
 
 🙌 Author
 Gudhal Chauhan
-🧑‍💻 Full Stack Developer Intern @ Preswald
-📬 LinkedIn • GitHub
+Full Stack Developer Intern @ Preswald
+LinkedIn: [Add your link here]
+GitHub: [Add your link here]
 
 📢 Powered By
 Preswald – Transforming data into dynamic dashboards.
